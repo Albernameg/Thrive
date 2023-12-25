@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Thrive</string>
+    <string name="splash_description">Experience the thrill of live music.</string>
+    <string name="get_started">Get Started</string>
+    <string name="slogan">Browse a lot of interesting offers and choose something for yourself. The world is waiting!</string>
 </resources>

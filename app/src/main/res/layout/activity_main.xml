@@ -4,15 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:id="@+id/splash_app_name_text"
+        style="@style/text_36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/app_name"
+        android:textColor="@color/pearl_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/splash_description_text"
+        style="@style/text_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/splash_description"
+        android:textColor="@color/pearl_white"
+        app:layout_constraintStart_toStartOf="@id/splash_app_name_text"
+        app:layout_constraintTop_toBottomOf="@id/splash_app_name_text" />
+
+    <Button
+        android:id="@+id/splash_start_button"
+        style="@style/text_15"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/pearl_white"
+        android:text="@string/get_started"
+        android:textColor="@color/olive_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="16dp"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:textColor="@color/pearl_white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/splash_start_button"
+        app:layout_constraintEnd_toEndOf="@id/splash_start_button"
+        app:layout_constraintStart_toStartOf="@id/splash_start_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
